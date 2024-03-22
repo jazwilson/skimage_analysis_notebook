@@ -1,0 +1,24 @@
+name: skimage
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - jupyter
+  - jupyterlab >= 3.3
+  - ipywidgets
+  - itk == 5.2
+  - itkwidgets == 0.32
+  - notebook == 6.4
+  - numpy >= 1.21
+  
+  - scipy >= 1.7
+  - matplotlib >= 3.5
+  - scikit-image >= 0.19
+  - scikit-learn >= 1.0
+
+  
+  # Use the nvcc_linux-64 meta-package to use system installed NVCC for pytorch, tensor etc
+  - nvcc_linux-64
+ 
