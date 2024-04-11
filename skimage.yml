@@ -8,8 +8,8 @@ dependencies:
   - jupyter
   - jupyterlab >= 3.3
   - ipywidgets
-  - itk == 5.2
-  - itkwidgets == 0.32
+#  - itk == 5.2
+#  - itkwidgets == 0.32
   - notebook == 6.4
   - numpy >= 1.21
   
@@ -17,8 +17,16 @@ dependencies:
   - matplotlib >= 3.5
   - scikit-image >= 0.19
   - scikit-learn >= 1.0
-
   
   # Use the nvcc_linux-64 meta-package to use system installed NVCC for pytorch, tensor etc
   - nvcc_linux-64
+  
+  - pip
+  - pip:
+	- itk>=5.3.0
  
+# local install
+# pip install itkwidgets
+# pip install 'itkwidgets[notebook]>=1.0a49'
+# pip install 'itkwidgets[lab]>=1.0a49' # for juptyer lab
+# pip install 'itkwidgets>=1.0a49' # for google colab
